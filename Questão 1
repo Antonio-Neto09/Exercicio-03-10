@@ -9,8 +9,7 @@
 <body>
     <div class="container">
         <h1>Bem-vindo!</h1>
-        <label for="nome">Digite seu nome:</label>
-        <input type="text" id="nome" placeholder="Seu nome">
+        <input type="text" id="nome" placeholder="Digite seu nome">
         <button onclick="saudar()">Clique aqui</button>
         <p id="mensagem"></p>
     </div>
@@ -31,11 +30,11 @@ function saudar() {
     var nome = document.getElementById("nome").value;
     var mensagem = document.getElementById("mensagem");
 
-    if (nome.trim() === "") {
+    if (nome === "") {
         mensagem.textContent = "Por favor, insira seu nome.";
         mensagem.style.color = "black";
     } else {
-        mensagem.textContent = "Olá, " + nome + "! Seja bem-vindo(a) à página do aluno(a):";
+        mensagem.textContent = "Olá, " + nome + "! Seja bem-vindo(a) à página do aluno(a).";
         mensagem.style.color = "black"; 
     }
 }
