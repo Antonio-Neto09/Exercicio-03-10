@@ -22,14 +22,13 @@
 
 
 function gerarLista() {
-    var quantidade = document.getElementById("quantidade").value;
-    var mensagem = document.getElementById("mensagem");
-    var lista = document.getElementById("lista");
-
-    lista.innerHTML = "";  
-    mensagem.textContent = "";  
+     const quantidade = document.getElementById("quantidade").value;
+     const lista = document.getElementById("lista");
+     const nome = "Seu nome" ; 
+    lista.innerHTML = <li> Por favor, insira uj número válido.</li>;  
+      
     
-    if (quantidade.trim() === "" || isNaN(quantidade) || quantidade <= 0) {
+    if (quantidade=== "" || isNaN(quantidade) || quantidade <= 0) {
         mensagem.textContent = "Por favor, insira um número válido.";
     } else {
         for (var i = 1; i <= quantidade; i++) {
